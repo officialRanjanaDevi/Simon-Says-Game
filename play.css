@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+h2{
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+}
+.btn{
+    height: 12rem;
+    width: 12rem;
+    border: 5px solid black;
+    border-radius: 10%;
+}
+.red{
+    background-color:  crimson;
+    border-top-right-radius: 100%;
+  
+}
+.green{
+    background-color: rgb(31, 138, 2);
+    border-bottom-left-radius: 100%;
+    
+}
+.yellow{
+    background-color: rgb(253, 183, 4); 
+    border-top-left-radius: 100%;
+    
+}
+.blue{
+    background-color:cadetblue;
+    border-bottom-right-radius: 100%;
+   
+}
+.flash{
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1.08);
+    box-shadow: 0px 0px 10px 10px rgb(2, 255, 255);
+}
+.userflash{
+    background-color:green;
+    transform: scale(1.08);
+}
+button{
+    height: 5rem;
+    width: 20rem;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 30px;
+}
+button:hover{
+    background-color:  rgb(31, 138, 2);
+   color: black;
+   transform: scale(1.05);
+   font-size: 35px;
+   font-weight: bolder;
+   border: 2px solid black;
+}
+.popup {
+    height: 10rem;
+    width: 20rem;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+     flex-direction: column;
+     justify-content: space-between;   
+    align-items: center;
+}
+.popup h2 {
+    margin: 0;
+    font-size: 24px;
+    color: red;
+}
+.popup>div>p{
+    color: white;
+}
+.close {
+    height: 4rem;
+    width: 10rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid white;
+
+}
+.popup .close:hover {
+    background-color:rgb(220, 15, 15);
+    color: black;
+}

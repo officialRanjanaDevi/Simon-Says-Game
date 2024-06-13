@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayGame</title>
+    <link rel="stylesheet" href="play.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <h2 class="press-start-2p-regular ">Press any key to start the game</h2>
+    <div class="container">
+
+    <div  type="button" id="yellow" class="btn yellow" ></div>
+    <div  type="button" id="red" class="btn red"></div>
+    <div  type="button" id="green" class="btn green"></div>
+    <div  type="button" id="blue" class="btn blue"></div>
+    
+    </div>
+
+      <!-- Popup Modal -->
+      <div id="popup" class="popup">
+        <div>
+            <h2 class="press-start-2p-regular ">Game Over!</h2>
+            <p>Your score was <span id="score"></span>.</p>
+        </div>
+        
+        <button class="close" onclick="closePopup()">close</button>
+    </div>
+
+    <button class="press-start-2p-regular" onclick="location.href = 'home.html';">Exit</button>
+   <script src="app.js"></script> 
+</body>
+</html>
+

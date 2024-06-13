@@ -1,0 +1,90 @@
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+} .subheading{
+    display: flex;
+    flex-direction: row;
+    margin:0rem 2rem;
+}
+
+h1{
+    font-size: 6rem;
+    
+}
+h1:nth-of-type(1n){
+    color: rgb(31, 138, 2);
+ }
+h1:nth-of-type(2n){
+   color: crimson;
+}
+h1:nth-of-type(3n){
+    color:  rgb(253, 183, 4); 
+}
+h1:nth-of-type(4n){
+    color: cadetblue;
+}
+h1:nth-of-type(5n){
+    color:rosybrown;
+}
+
+.box{
+    padding: 2px;
+    height: 5rem;
+    width: 25rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    /* text-shadow: 2px 2px rgb(129, 64, 64) ; */
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.play:hover{
+   background-color: rosybrown;
+   color: black;
+   transform: scale(1.05);
+   font-size: 35px;
+   font-weight: bolder;
+   border: 2px solid black;
+}
+.help:hover{
+    background-color:  rgb(31, 138, 2);
+    color: black;
+    transform: scale(1.05);
+    font-size: 35px;
+    font-weight: bolder;
+    border: 2px solid black;
+ }
+ .highscore:hover{
+    background-color: rgb(253, 183, 4); 
+    color: black;
+    transform: scale(1.05);
+    font-size: 35px;
+    font-weight: bolder;
+    border: 2px solid black;
+ }
+ .moregames:hover{
+    background-color: cadetblue;
+    color: black;
+    transform: scale(1.05);
+    font-size: 35px;
+    font-weight: bolder;
+    border: 2px solid black;
+ }
